@@ -1,6 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:fishfarm/screens/homepage.dart';
 import 'package:fishfarm/screens/login_screen.dart';
+import 'package:fishfarm/screens/navigation.dart';
+import 'package:fishfarm/screens/recommend_fish.dart';
 import 'package:fishfarm/screens/register_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -31,7 +33,11 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const Login(),
         '/register': (context) => const Register(),
+        '/nav': (context) => const ButtomNavigation(
+              key: Key('nav'),
+            ),
         '/home': (context) => const Home(),
+        '/recommendor': (context) => const FishRecommendor(),
       },
       debugShowCheckedModeBanner: false,
     );

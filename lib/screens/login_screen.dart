@@ -26,7 +26,7 @@ class _LoginState extends State<Login> {
         UserCredential userCredential = await FirebaseAuth.instance
             .signInWithEmailAndPassword(email: email, password: password);
         if (userCredential.user != null) {
-          Navigator.pushNamed(context, '/home');
+          Navigator.pushNamed(context, '/nav');
         }
       } on FirebaseAuthException {
         MotionToast.error(description: const Text('Unable to Login'));
