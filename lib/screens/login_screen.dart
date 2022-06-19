@@ -12,8 +12,8 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-  TextEditingController emailController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
+  TextEditingController emailController = TextEditingController(text: "ymilan361@gmail.com");
+  TextEditingController passwordController = TextEditingController(text: "mko0nji9,l.");
 
   void login() async {
     String email = emailController.text.trim();

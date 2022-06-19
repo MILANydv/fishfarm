@@ -36,7 +36,10 @@ class MyApp extends StatelessWidget {
         '/nav': (context) => const ButtomNavigation(
               key: Key('nav'),
             ),
-        '/home': (context) => const Home(),
+        '/home': (context) => const Home(
+              key: Key('home'),
+              title: 'Home',
+            ),
         '/recommendor': (context) => const FishRecommendor(),
       },
       debugShowCheckedModeBanner: false,

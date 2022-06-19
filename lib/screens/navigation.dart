@@ -12,7 +12,10 @@ class ButtomNavigation extends StatefulWidget {
 class _ButtomNavigationState extends State<ButtomNavigation> {
   int _selectedIndex = 0;
   static const List<Widget> _pages = <Widget>[
-    Home(),
+    Home(
+      key: Key('home'),
+      title: 'Home',
+    ),
     FishRecommendor(),
   ];
 
